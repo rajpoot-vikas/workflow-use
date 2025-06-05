@@ -1,0 +1,3 @@
+{
+  "python.defaultInterpreterPath": "workflows/.venv/bin/python"
+} 
