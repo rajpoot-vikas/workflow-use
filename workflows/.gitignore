@@ -192,4 +192,4 @@ data/
 user_data_dir
 
 .vscode/
-00_data/
+data
