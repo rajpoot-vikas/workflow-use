@@ -13,11 +13,12 @@ classifiers = [
 
 dependencies = [
     "aiofiles>=24.1.0",
-    "browser-use>=0.2.4",
     "fastapi>=0.115.12",
     "fastmcp>=2.3.4",
     "typer>=0.15.3",
     "uvicorn>=0.34.2",
+    { path = "../browser-use-0.2.5", editable = true }
+
 ]
 
 
@@ -54,7 +55,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build]
 include = [
-    "workflow_use/**/*.py"
+    "workflow_use/**/*.py",
 ]
 
 [tool.hatch.metadata]

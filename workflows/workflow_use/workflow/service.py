@@ -87,7 +87,7 @@ class Workflow:
 
 		self.context: dict[str, Any] = {}
 
-		self.inputs_def: List[WorkflowInputSchemaDefinition] = self.schema.input_schema
+		self.inputs_def: List[WorkflowInputSchemaDefinition] = self.schema.input_schema 
 		self._input_model: type[BaseModel] = self._build_input_model()
 
 	# --- Loaders ---
@@ -521,10 +521,10 @@ class Workflow:
 		Returns:
 			Either WorkflowRunOutput containing all step results or an instance of output_model if provided
 		"""
-		runtime_inputs = inputs or {}
-		# 1. Validate inputs against definition
-		self._validate_inputs(runtime_inputs)
-		# 2. Initialize context with validated inputs
+		runtime_inputs = inputs or {} 
+		# 1. Validate inputs against definition 
+		self._validate_inputs(runtime_inputs) 
+		# 2. Initialize context with validated inputs 
 		self.context = runtime_inputs.copy()  # Start with a fresh context
 
 		results: List[ActionResult | AgentHistoryList] = []
